@@ -10,8 +10,8 @@ export default function WeatherApp() {
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
 
-    const API_KEY = import.meta.env.VITE_API_KEY;
-
+    const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
+    
     const fetchWeather = async (searchQuery) => {
         setLoading(true);
         try {
